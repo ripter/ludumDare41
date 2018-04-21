@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class timeWithMusic : MonoBehaviour {
 	public AudioSource levelSong;
+	public bool two;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +16,11 @@ public class timeWithMusic : MonoBehaviour {
 	void Update () {
 		if (Math.Floor(levelSong.time) == 5) {
 			Debug.Log ("Turn on the light");
-			Animator me = GetComponent<Animator> ();
+			Animator me = this.GetComponent<Animator> ();
 			me.SetTrigger ("SwitchTriggered");
 		}
+
+		GameObject fooBar;
+		Transform myTransform = GetComponent<Transform> ();
 	}
 }
