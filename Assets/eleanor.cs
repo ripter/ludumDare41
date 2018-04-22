@@ -9,7 +9,7 @@ public class eleanor : MonoBehaviour {
 	public Animator door4;
 
 	AudioSource songAudio;
-
+	private int lastTime;
 
 	// Use this for initialization
 	void Start () {
@@ -19,19 +19,35 @@ public class eleanor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		int time = (int)songAudio.time;
-		Debug.Log (time);
 
-		if (time == 0) {
+		// Only trigger once per rounded second.
+		if (lastTime == time) {
+			return;
+		}
+		lastTime = time;
+
+		// Control animations based on song time.
+		if (time == 1) {
 			door2.Play ("DoorOpening");
-		}
-		else if (time == 14) {
-			door1.Play("DoorOpening");
+		} else if (time == 14) {
+			door1.Play ("DoorOpening");
 			door2.Play ("DoorClosing");
+		} else if (time == 32) {
+			door1.Play ("DoorClosing");
+		} else if (time == 45) {
+
+		} else if (time == 63) {
+
+		} else if (time == 77) {
+
+		} else if (time == 90) {
+
+		} else if (time == 108) {
+
+		} else if (time == 120) {
+
 		}
-//		if (time == 14 && eleanor1.activeSelf) {
-//			eleanor1.SetActive (false);
-//			eleanor2.SetActive (true);
-//		}
+		Debug.Log (time);
 	}
 
 }
