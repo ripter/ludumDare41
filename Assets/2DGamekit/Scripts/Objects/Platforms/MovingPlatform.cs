@@ -8,6 +8,7 @@ namespace Gamekit2D
     [RequireComponent(typeof(Rigidbody2D))]
     public class MovingPlatform : MonoBehaviour
     {
+		public string[] requiredInventoryItemKeys;
         public enum MovingPlatformType
         {
             BACK_FORTH,
