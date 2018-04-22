@@ -35,10 +35,10 @@ public class tntSequencer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		RunAt (5, fireball1);
-		RunAt (6, fireball2);
-		RunAt (10, fireball3);
+		RunAt (8, fireball1);
+		RunAt (10, fireball2);
+		RunAt (12, fireball3);
 		RunAt (14, fireball4);
-		RunAt (17, fireball5);
+		RunAt (16, fireball5);
 	}
 }
