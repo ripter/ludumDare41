@@ -34,7 +34,6 @@ public class eleanor : MonoBehaviour {
 		} else if (time == 14) {
 			// Start Eleanor Block
 			doorOuterLeft.Play("DoorOpening");
-			doorOuterRight.Play("DoorClosing");
 			// Close the inner doors.
 			doorInnerLeft.Play ("DoorClosing");
 			doorInnerRight.Play ("DoorClosing");
