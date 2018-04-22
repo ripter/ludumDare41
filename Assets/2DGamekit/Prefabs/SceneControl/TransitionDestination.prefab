@@ -60,7 +60,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   setState: 0
   animatorStateName: 
-  setParameters: 0
+  setParameters: 1
   parameterSetters: []
 --- !u!114 &114808708404685106
 MonoBehaviour:
