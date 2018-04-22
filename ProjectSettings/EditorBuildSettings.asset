@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/test jump pipe.unity
     guid: d721e789423024cc18642aa3a9af9147
+  - enabled: 1
+    path: Assets/BattleStep.unity
+    guid: ae7912828653a4740a923b5308d6147b
