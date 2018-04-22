@@ -13,5 +13,7 @@ public class logTime : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Debug.Log (audioSource.time);
+
+
 	}
 }
