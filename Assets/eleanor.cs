@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class eleanor : MonoBehaviour {
-	public GameObject eleanor1;
-	public GameObject eleanor2;
+	public Animator door1;
+	public Animator door2;
+	public Animator door3;
+	public Animator door4;
 
 	AudioSource songAudio;
 
@@ -19,10 +21,17 @@ public class eleanor : MonoBehaviour {
 		int time = (int)songAudio.time;
 		Debug.Log (time);
 
-		if (time == 14 && eleanor1.activeSelf) {
-			eleanor1.SetActive (false);
-			eleanor2.SetActive (true);
+		if (time == 0) {
+			door2.Play ("DoorOpening");
 		}
+		else if (time == 14) {
+			door1.Play("DoorOpening");
+			door2.Play ("DoorClosing");
+		}
+//		if (time == 14 && eleanor1.activeSelf) {
+//			eleanor1.SetActive (false);
+//			eleanor2.SetActive (true);
+//		}
 	}
 
 }
