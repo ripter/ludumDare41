@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Gamekit2D;
 
 public class eleanor : MonoBehaviour {
+	public PlayerCharacter player;
 	public Animator doorOuterLeft;
 	public Animator doorOuterRight;
 	public Animator doorInnerLeft;
@@ -33,28 +35,28 @@ public class eleanor : MonoBehaviour {
 
 		} else if (time == 14) {
 			// Start Eleanor Block
-			doorOuterLeft.Play("DoorOpening");
+			doorOuterLeft.Play ("DoorOpening");
 			// Close the inner doors.
 			doorInnerLeft.Play ("DoorClosing");
 			doorInnerRight.Play ("DoorClosing");
 
 		} else if (time == 32) {
 			// End Eleanor Block
-			doorOuterLeft.Play("DoorClosing");
+			doorOuterLeft.Play ("DoorClosing");
 			// Swap inner doors.
 			doorInnerLeft.Play ("DoorClosing");
 			doorInnerRight.Play ("DoorOpening");
 
 		} else if (time == 45) {
 			// Start Father Block
-			doorOuterRight.Play("DoorOpening");
+			doorOuterRight.Play ("DoorOpening");
 			// Close the inner doors.
 			doorInnerLeft.Play ("DoorClosing");
 			doorInnerRight.Play ("DoorClosing");
 
 		} else if (time == 63) {
 			// End Father Block
-			doorOuterRight.Play("DoorClosing");
+			doorOuterRight.Play ("DoorClosing");
 
 		} else if (time == 77) {
 			// open inner doors
@@ -63,23 +65,27 @@ public class eleanor : MonoBehaviour {
 
 		} else if (time == 90) {
 			// Start Eleanor & Father Block
-			doorOuterLeft.Play("DoorOpening");
-			doorOuterRight.Play("DoorOpening");
+			doorOuterLeft.Play ("DoorOpening");
+			doorOuterRight.Play ("DoorOpening");
 
 			// close the inner doors
 			doorInnerLeft.Play ("DoorClosing");
 			doorInnerRight.Play ("DoorClosing");
 		} else if (time == 108) {
 			// End Eleanor & Father Block
-			doorOuterLeft.Play("DoorClosing");
-			doorOuterRight.Play("DoorClosing");
+			doorOuterLeft.Play ("DoorClosing");
+			doorOuterRight.Play ("DoorClosing");
 
 		} else if (time == 120) {
 			// open all the doors, song is over.
 			doorInnerLeft.Play ("DoorOpening");
 			doorInnerRight.Play ("DoorOpening");
-			doorOuterLeft.Play("DoorOpening");
-			doorOuterRight.Play("DoorOpening");
+			doorOuterLeft.Play ("DoorOpening");
+			doorOuterRight.Play ("DoorOpening");
+
+		} else if (time == 126) {
+			// Out of time, kill the player
+			player.OnDie();
 		}
 		Debug.Log (time);
 	}
