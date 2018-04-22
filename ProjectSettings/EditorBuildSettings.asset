@@ -41,3 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WarpZone.unity
     guid: 753aaf7a2ee5b49b19a66c7df510c6e1
+  - enabled: 1
+    path: Assets/jg.unity
+    guid: 39f9e5e8273f74dfe94939db0713d40b
+  - enabled: 1
+    path: Assets/legend_of_the_hidden_temple.unity
+    guid: 25e431edf00114aef88afa48c0c6a02d
