@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class eleanor : MonoBehaviour {
 	public GameObject eleanor1;
+	public GameObject eleanor2;
 
 	AudioSource songAudio;
 
@@ -20,6 +21,7 @@ public class eleanor : MonoBehaviour {
 
 		if (time == 14 && eleanor1.activeSelf) {
 			eleanor1.SetActive (false);
+			eleanor2.SetActive (true);
 		}
 	}
 
