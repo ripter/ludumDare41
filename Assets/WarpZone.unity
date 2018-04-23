@@ -621,7 +621,7 @@ Prefab:
     - target: {fileID: 114004283927459256, guid: 6bc0b2bb61623f94aa335ee8a769a8f9,
         type: 2}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: JG (Unfinished)
+      value: Adventure 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1831303677936634, guid: 6bc0b2bb61623f94aa335ee8a769a8f9, type: 2}
       propertyPath: m_Name
@@ -824,12 +824,12 @@ GameObject:
   - component: {fileID: 341765291}
   - component: {fileID: 341765292}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: unfinished light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &341765291
 Transform:
   m_ObjectHideFlags: 0
@@ -1281,7 +1281,7 @@ Prefab:
     - target: {fileID: 114004283927459256, guid: 6bc0b2bb61623f94aa335ee8a769a8f9,
         type: 2}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: T.N.T. (Unfinished)
+      value: T.N.T.
       objectReference: {fileID: 0}
     - target: {fileID: 1831303677936634, guid: 6bc0b2bb61623f94aa335ee8a769a8f9, type: 2}
       propertyPath: m_Name
@@ -1936,7 +1936,8 @@ Prefab:
     - target: {fileID: 114004283927459256, guid: 6bc0b2bb61623f94aa335ee8a769a8f9,
         type: 2}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: I wonder if I can enter these portals if I press E?
+      value: Press E to enter portal. Down + Space to jump though platforms. Press
+        K or O to attack.
       objectReference: {fileID: 0}
     - target: {fileID: 114004283927459256, guid: 6bc0b2bb61623f94aa335ee8a769a8f9,
         type: 2}
@@ -11376,12 +11377,12 @@ GameObject:
   - component: {fileID: 2106620914}
   - component: {fileID: 2106620915}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: unfinsihed light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2106620914
 Transform:
   m_ObjectHideFlags: 0
