@@ -706,12 +706,19 @@ namespace Gamekit2D
             }
         }
 
-        public void OnDie()
+		public void OnDie()
         {
             m_Animator.SetTrigger(m_HashDeadPara);
 
-            StartCoroutine(DieRespawnCoroutine(true, false));
+			StartCoroutine(DieRespawnCoroutine(true, false));
         }
+
+		public void OnDieWithCheckPoint()
+		{
+			m_Animator.SetTrigger(m_HashDeadPara);
+
+			StartCoroutine(DieRespawnCoroutine(true, true));
+		}
 
 		public void restartCurrentScene(){
 			Scene scene = SceneManager.GetActiveScene(); 
