@@ -53,10 +53,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1919611099958742, guid: 9a2f32836e0e10248b425c273622a735, type: 2}
   initialPoolCount: 5
-  totalEnemiesToBeSpawned: 5
-  concurrentEnemiesToBeSpawned: 1
-  spawnArea: 1
-  spawnDelay: 3
+  totalEnemiesToBeSpawned: 30
+  concurrentEnemiesToBeSpawned: 5
+  spawnArea: 10
+  spawnDelay: 1.5
   removalDelay: 1.5
   dataSettings:
     dataTag: 
