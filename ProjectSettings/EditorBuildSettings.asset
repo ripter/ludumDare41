@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/2DGamekit/Scenes/Start.unity
-    guid: 57df1e417250bc247976c2c0dc088efe
+    path: Assets/WarpZone.unity
+    guid: 753aaf7a2ee5b49b19a66c7df510c6e1
   - enabled: 1
     path: Assets/chris.unity
     guid: b537877aca8d04abab33581dd80fc740
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone2.unity
     guid: 5436c67e9267f17458b31fcdc20cd20a
+  - enabled: 1
+    path: Assets/2DGamekit/Scenes/Start.unity
+    guid: 57df1e417250bc247976c2c0dc088efe
   - enabled: 0
     path: Assets/2DGamekit/Scenes/Zone3.unity
     guid: 4b4b0e246fc7dbb4295a38fd03241362
@@ -38,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/tnt.unity
     guid: f754ec9777503406e92e4a2671fd8090
-  - enabled: 1
-    path: Assets/WarpZone.unity
-    guid: 753aaf7a2ee5b49b19a66c7df510c6e1
   - enabled: 1
     path: Assets/jg.unity
     guid: 39f9e5e8273f74dfe94939db0713d40b
