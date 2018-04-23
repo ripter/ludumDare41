@@ -87,7 +87,7 @@ public class eleanor : MonoBehaviour {
 			// Out of time, kill the player
 			player.OnDie();
 		}
-		Debug.Log (time);
+//		Debug.Log (time);
 	}
 
 }
