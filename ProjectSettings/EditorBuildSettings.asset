@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/2DGamekit/Scenes/Zone1.unity
     guid: a94cb8f134bf81349ad016c79b629e3d
-  - enabled: 1
+  - enabled: 0
     path: Assets/2DGamekit/Scenes/Zone2.unity
     guid: 5436c67e9267f17458b31fcdc20cd20a
-  - enabled: 1
+  - enabled: 0
     path: Assets/2DGamekit/Scenes/Start.unity
     guid: 57df1e417250bc247976c2c0dc088efe
   - enabled: 0
