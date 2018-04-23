@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 4275605379502928}
   - component: {fileID: 50336635772233934}
   - component: {fileID: 114113284020151736}
+  - component: {fileID: 114413927764589780}
   m_Layer: 0
   m_Name: DoomBlock
   m_TagString: Untagged
@@ -778,6 +779,32 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Gamekit2D.Damager+NonDamagableEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114413927764589780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1990582349693906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff44b8ffcc6c954196bfdcf3eaff9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformRigidbody: {fileID: 0}
+  contactFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &114434650885143216
 MonoBehaviour:
   m_ObjectHideFlags: 1
