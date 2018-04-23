@@ -8,21 +8,13 @@ public class tntSequencer : MonoBehaviour
 	public AudioSource levelSong;
 	private Dictionary<string, bool> runnables = new Dictionary<string, bool>();
 
-	public GameObject fireball0;
-	public GameObject fireball1;
-	public GameObject fireball2;
-	public GameObject fireball3;
-	public GameObject fireball4;
-	public GameObject fireball5;
-
-	public Vector3 originalPosition;
+	public GameObject fireballObject;
+	public GameObject ellen;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		print (fireball0.transform.position);
-		originalPosition = fireball0.transform.position;
 	}
 
 	void RunAt (int targetTime, GameObject targetObject)
@@ -37,15 +29,17 @@ public class tntSequencer : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
 	{
-		if ((int)(levelSong.time * 1000) % 476 == 0)
-			fireball0.transform.position = new Vector3(0.0f, 21.9f, 0.0f);
-			fireball0.SetActive (!fireball1.activeSelf);
-		RunAt (8, fireball1);
-		RunAt (10, fireball2);
-		RunAt (12, fireball3);
-		RunAt (14, fireball4);
-		RunAt (16, fireball5);
+		if ((bool)ellen) {
+			float offsetFromCurrent = Random.Range (-3, 13) + ellen.transform.position.x;
+			if ((int)(levelSong.time * 100) % 48 == 0) {
+//				print ("FIREBALL!!!!");
+				GameObject fireball;
+				fireball = Instantiate (fireballObject, new Vector3 (offsetFromCurrent, 21.9f, 0.0f), Quaternion.identity);
+				fireball.SetActive (true);
+				Destroy (fireball, 10);
+			}
+		}
 	}
 }
